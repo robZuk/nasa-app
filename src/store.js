@@ -18,7 +18,7 @@ export default ({ children }) => {
       setLoading(true);
       setError(false);
       try {
-        const res = await fetch("https://eonet.gsfc.nasa.gov/api/v2.1/events");
+        const res = await fetch("https://eonet.gsfc.nasa.gov/api/v3/events");
         const { events } = await res.json();
         console.log(events);
         setData(events);

@@ -76,15 +76,13 @@ export default function Search() {
             onClick={() => (
               toggleDrawer(false),
               mapRef.current.panTo({
-                lat: event.geometries[event.geometries.length - 1]
-                  .coordinates[1],
-                lng: event.geometries[event.geometries.length - 1]
-                  .coordinates[0],
+                lat: event.geometry[event.geometry.length - 1].coordinates[1],
+                lng: event.geometry[event.geometry.length - 1].coordinates[0],
               }),
               mapRef.current.setZoom(9),
               setSearchedData([]),
               setSearchedEventPosition([
-                ...event.geometries[event.geometries.length - 1].coordinates,
+                ...event.geometry[event.geometry.length - 1].coordinates,
               ])
             )}
           >

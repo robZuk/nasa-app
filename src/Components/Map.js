@@ -40,13 +40,13 @@ export default function Map() {
           evId: ev.id,
           category: ev.categories[0].title,
           title: ev.title,
-          date: ev.geometries[ev.geometries.length - 1].date,
+          date: ev.geometry[ev.geometry.length - 1].date,
         },
         geometry: {
           type: "Point",
           coordinates: [
-            parseFloat(ev.geometries[ev.geometries.length - 1].coordinates[0]),
-            parseFloat(ev.geometries[ev.geometries.length - 1].coordinates[1]),
+            parseFloat(ev.geometry[ev.geometry.length - 1].coordinates[0]),
+            parseFloat(ev.geometry[ev.geometry.length - 1].coordinates[1]),
           ],
         },
       }))
