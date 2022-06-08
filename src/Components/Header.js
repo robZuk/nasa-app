@@ -7,7 +7,8 @@ import {
 } from "../constans/constans";
 import { WILDFIRES, VOLCANOES, ICES, STORMS } from "../constans/constans";
 
-const showEvents = (setEventsType, event) => {
+const showEvents = (setEventsType, event, e) => {
+  e.preventDefault();
   setEventsType((prevState) => ({
     ...prevState,
     [event]: !prevState[event],
@@ -18,13 +19,13 @@ const Icon = ({ src, alt, setEventsType, event }) => {
   const [activeIcon, setActiveIcon] = useState(true);
   return (
     <button
-      className={`marker map-header-icon${!activeIcon && "-active"}`}
-      onClick={() => {
-        showEvents(setEventsType, event);
+      className={`marker map-header-button${!activeIcon && "-active"}`}
+      onClick={(e) => {
+        showEvents(setEventsType, event, e);
         setActiveIcon((prevActiveIcon) => !prevActiveIcon);
       }}
     >
-      <img src={src} alt={alt} className="map-header-img" />
+      <img src={src} alt={alt} className="map-header-button-img" />
     </button>
   );
 };
