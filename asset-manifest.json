@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/nasa-app/static/css/main.e3cf9fe0.chunk.css",
-    "main.js": "/nasa-app/static/js/main.cc0692ac.chunk.js",
-    "main.js.map": "/nasa-app/static/js/main.cc0692ac.chunk.js.map",
+    "main.css": "/nasa-app/static/css/main.bf65363f.chunk.css",
+    "main.js": "/nasa-app/static/js/main.65b24f6f.chunk.js",
+    "main.js.map": "/nasa-app/static/js/main.65b24f6f.chunk.js.map",
     "runtime-main.js": "/nasa-app/static/js/runtime-main.1c4d3ad0.js",
     "runtime-main.js.map": "/nasa-app/static/js/runtime-main.1c4d3ad0.js.map",
     "static/js/2.6e820c39.chunk.js": "/nasa-app/static/js/2.6e820c39.chunk.js",
     "static/js/2.6e820c39.chunk.js.map": "/nasa-app/static/js/2.6e820c39.chunk.js.map",
     "index.html": "/nasa-app/index.html",
-    "precache-manifest.92be3362be9021743b7ab56178fd96af.js": "/nasa-app/precache-manifest.92be3362be9021743b7ab56178fd96af.js",
+    "precache-manifest.889142c07956e317657bfb00af789fe9.js": "/nasa-app/precache-manifest.889142c07956e317657bfb00af789fe9.js",
     "service-worker.js": "/nasa-app/service-worker.js",
-    "static/css/main.e3cf9fe0.chunk.css.map": "/nasa-app/static/css/main.e3cf9fe0.chunk.css.map",
+    "static/css/main.bf65363f.chunk.css.map": "/nasa-app/static/css/main.bf65363f.chunk.css.map",
     "static/js/2.6e820c39.chunk.js.LICENSE.txt": "/nasa-app/static/js/2.6e820c39.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1c4d3ad0.js",
     "static/js/2.6e820c39.chunk.js",
-    "static/css/main.e3cf9fe0.chunk.css",
-    "static/js/main.cc0692ac.chunk.js"
+    "static/css/main.bf65363f.chunk.css",
+    "static/js/main.65b24f6f.chunk.js"
   ]
 }
