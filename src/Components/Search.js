@@ -90,7 +90,7 @@ export default function Search() {
               {event.categories[0].title === WILDFIRES && (
                 <Avatar sx={{ bgcolor: grey[300] }}>
                   <img
-                    src={WILDFIRE_SRC}
+                    src={process.env.PUBLIC_URL + WILDFIRE_SRC}
                     alt={WILDFIRES}
                     className="event-list-img"
                   />
@@ -99,7 +99,7 @@ export default function Search() {
               {event.categories[0].title === VOLCANOES && (
                 <Avatar sx={{ bgcolor: grey[300] }}>
                   <img
-                    src={VOLCANO_SRC}
+                    src={process.env.PUBLIC_URL + VOLCANO_SRC}
                     alt={VOLCANOES}
                     className="event-list-img"
                   />
@@ -107,13 +107,17 @@ export default function Search() {
               )}
               {event.categories[0].title === ICES && (
                 <Avatar sx={{ bgcolor: grey[300] }}>
-                  <img src={ICE_SRC} alt={ICES} className="event-list-img" />
+                  <img
+                    src={process.env.PUBLIC_URL + ICE_SRC}
+                    alt={ICES}
+                    className="event-list-img"
+                  />
                 </Avatar>
               )}
               {event.categories[0].title === STORMS && (
                 <Avatar sx={{ bgcolor: grey[300] }}>
                   <img
-                    src={STORM_SRC}
+                    src={process.env.PUBLIC_URL + STORM_SRC}
                     alt={STORMS}
                     className="event-list-img"
                   />

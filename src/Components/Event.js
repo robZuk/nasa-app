@@ -28,16 +28,32 @@ const Event = ({ cluster, setLocationInfo, className }) => {
   return (
     <>
       {cluster.properties.category === WILDFIRES && (
-        <EventIcon src={WILDFIRE_SRC} alt={WILDFIRES} cluster={cluster} />
+        <EventIcon
+          src={process.env.PUBLIC_URL + WILDFIRE_SRC}
+          alt={WILDFIRES}
+          cluster={cluster}
+        />
       )}
       {cluster.properties.category === VOLCANOES && (
-        <EventIcon src={VOLCANO_SRC} alt={VOLCANOES} cluster={cluster} />
+        <EventIcon
+          src={process.env.PUBLIC_URL + VOLCANO_SRC}
+          alt={VOLCANOES}
+          cluster={cluster}
+        />
       )}
       {cluster.properties.category === STORMS && (
-        <EventIcon src={STORM_SRC} alt={STORMS} cluster={cluster} />
+        <EventIcon
+          src={process.env.PUBLIC_URL + STORM_SRC}
+          alt={STORMS}
+          cluster={cluster}
+        />
       )}
       {cluster.properties.category === ICES && (
-        <EventIcon src={ICE_SRC} alt={ICES} cluster={cluster} />
+        <EventIcon
+          src={process.env.PUBLIC_URL + ICE_SRC}
+          alt={ICES}
+          cluster={cluster}
+        />
       )}
     </>
   );

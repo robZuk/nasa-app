@@ -32,25 +32,25 @@ const Header = ({ setEventsType }) => {
   return (
     <div className="map-header">
       <Icon
-        src={WILDFIRE_SRC}
+        src={process.env.PUBLIC_URL + WILDFIRE_SRC}
         alt={WILDFIRES}
         setEventsType={setEventsType}
         event="wildfires"
       />
       <Icon
-        src={VOLCANO_SRC}
+        src={process.env.PUBLIC_URL + VOLCANO_SRC}
         alt={VOLCANOES}
         setEventsType={setEventsType}
         event="volcanoes"
       />
       <Icon
-        src={ICE_SRC}
+        src={process.env.PUBLIC_URL + ICE_SRC}
         alt={ICES}
         setEventsType={setEventsType}
         event="ices"
       />
       <Icon
-        src={STORM_SRC}
+        src={process.env.PUBLIC_URL + STORM_SRC}
         alt={STORMS}
         setEventsType={setEventsType}
         event="storms"
